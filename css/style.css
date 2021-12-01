@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* padding and margin should be in em and fonr size in rem */
+
+*{
+    margin: 0px;
+    /* padding: 0px; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* ------------html-element-styling------- */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{ 
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    /* 1.6 rem means 16 pix""" */
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    /* 0.5 em means half of font-size 8 pix  */
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+/* --------utility classess------- */
+
+.header .navbar .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* .container2{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+} */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* .container4{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+} */
+
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-grey{
+    color: #555;
+}
+
+.bg-dark{
+    background: #263238;
+}
+.text-light{
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    /* margin: 1rem; */
+    margin-top: 10rem;
+}
+
+.btn-primary{
+    background-color: white;
+    border-radius: 10rem;
+   
+
+}
+.btn-secondary{
+    background-color: white;
+    border-radius: 1.5em;
+    border: 2px solid red;
+    font-weight: 500;
+    padding: 0.5em 1.5em;
+    /* margin-bottom: 1rem; */
+    box-shadow: sandybrown;
+}
+
+.btn-primary:hover, .btn-secondary:hover{
+    background-color: #ddd;
+}
+
+
+html{
+    /* font-size: 10px; */
+    /* we should not write root element font size in pixels...it shiuld be in percentage */
+    /* 16 px == 100%
+    10px == 62.5% */
+    font-size: 62.5%;
+    line-height: 1.7;
+}
+
+/* -----------header styling------- */
+
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../img/header-image1.jpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+.navbar{
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+
+/* .header .logo,
+.header .navbar a{
+    color: white;
+} */
+
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+} 
+
+.navbar a:link, 
+.navbar a:visited{
+    color: white;
+}
+
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar a:hover{
+    border-bottom: 0.1rem solid white;
+    /* color: lawngreen; */
+}
+
+.navbar a{
+    padding-bottom: 0.2rem;
+}
+
+.content{
+    color: white;
+    text-align: center;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+
+
+.content h1{
+    font-weight: 700;
+
+}
+
+/* ###############showcase section styling######### */
+
+
+section::before{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.459);
+    
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .imgbox, .row2 .textbox{
+    float: left;
+    width: 50%;
+}
+
+.row2 .imgbox, .row1 .textbox{
+    float: right;
+    width: 50%;
+    
+}
+
+.row .imgbox{
+    
+    height: 100%;
+}
+
+.row .textbox{
+ 
+    padding: 3rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    /* padding: 0.5rem; */
+    object-fit: cover;
+}
+
+.features{
+    padding: 10rem 0;
+   
+   
+
+}
+.box{
+    /* border: 2px solid green; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.473);
+
+    
+}
+.box-1{
+    float: left;
+    width: 33.33%;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    height: 350px;
+    
+   
+}
+.box-2{
+    float: left;
+    width: 33.33%;
+    background-color: rgba(247, 84, 25, 0.74);
+    text-align: center;
+    padding: 30px;
+    height: 350px;
+}
+.box-3{
+    float: left;
+    width: 33.33%;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    height: 350px;
+}
+.box-wrapper::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+   
+}
+.social-mediaa-link i{
+    padding: 2rem;
+}
+.about-us{
+    padding: 4rem;
+    border: 2px soild red;   
+}
+
+.about-us .text-grey{
+    /* border: 4px solid red; */
+    background: rgb(206, 14, 206);
+    color: white;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.heading5{
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 6px solid rgba(255, 0, 0, 0.685);
+    /* display: inline-block; */
+}
+
+ul li{
+    list-style: none;
+}
+.about-wrapper{
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 2rem;
+   
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+    /* border: 2px solid green; */
+    padding-right: 4rem;
+    text-align: left;
+    background: #f26a36;
+    color: white;
+    font-family: 16px/26px 'Quicksand', sans-serif;
+    font-weight: 400;
+    width: 45%;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px 0px rgb(14, 31, 19);
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+    text-align: left;
+    background: #f26a36;
+    color: white;
+    font-family: 16px/26px 'Quicksand', sans-serif;
+    font-weight: 400;
+    width: 45%;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px 0px rgb(14, 31, 19);
+}
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: "\2713";
+    color: white;
+    font-weight: bold;
+}
+
+
+.stats{
+    /* border: 2px solid red; */
+    margin: 2rem 0;
+}
+
+
+
+.stats1{
+    float: left;
+    width: 25%;
+    /* border: 4px solid greenyellow; */
+    text-align: center;
+}
+.stats2{
+    float: left;
+    width: 25%;
+    /* border: 4px solid greenyellow; */
+    text-align: center;
+}
+.stats3{
+    float: left;
+    width: 25%;
+    /* border: 4px solid greenyellow; */
+    text-align: center;
+}
+.stats4{
+    float: left;
+    width: 25%;
+    /* border: 4px solid greenyellow; */
+    text-align: center;
+}
+.stats::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.number{
+    color: #e63946;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.cta-banner{
+    background: #e63947d2;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+    margin-top: 3rem;
+    
+
+}
+.cta-banner-left{
+    width: 60%;
+    float: left;
+    padding-top: 1rem;
+}
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;    letter-spacing: 0.4rem;
+    color: #f4f4f4;
+}
+
+/* ###### styling for contact form ### */
+
+.contact-form{
+    padding: 5rem 0;
+    font-size: 2rem;
+    background: #f7f7f7;
+   
+}
+
+
+
+.form-wrapper::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.form-wrapper .company-address{
+    /* border: 4px dotted green; */
+    float: left;
+    width: 49%;
+    background: #fff;
+    padding: 1rem;
+    height: 760px;
+    box-shadow: 0px 0px 7px 0px black;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .company-address img{
+    max-width: 90%;
+    max-height: 45%;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* ##form-styling#### */
+
+.form-wrapper .form{
+    font-size: 1.6rem;
+    /* border: 4PX dotted black; */
+    float: right;
+    width: 49%;
+    background: #fff;
+    padding: 1rem;
+    height: 760px;
+    box-shadow: 0px 0px 7px 0px black;
+} 
+
+.form-wrapper .form h1::after{
+    content: "";
+    display: block;
+    width: 100%
+}
+.form-wrapper .form h1{
+    border-bottom: 3px solid red;
+}
+
+.form-wrapper label{
+    display: block;
+
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form input:hover{
+    box-shadow: 0px 0px 7px 0px black;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper label::after{
+    content: "*";
+    color: black;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-wrapper .form p{
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    background: #e63946;
+    padding: 0.5em 3em;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* margin-bottom: 5rem; */
+    /* margin-top: 0.5rem; */
+    text-align: center;
+
+}
+
+.btn-secondary{
+    width: 40%;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 2rem;
+
+}
+
+/* ################ media-queries ######## */
+
+@media (max-width: 600px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        /* border: 2px solid red; */
+        
+    }
+
+    .navbar .nav-items{
+        margin-top: 0rem;
+        /* border: 2px solid red; */
+    }
+
+    .navbar .logo{
+        margin-bottom: 1rem;
+    }
+
+    .box-wrapper .box-1,
+    .box-wrapper .box-2,
+    .box-wrapper .box-3{
+        height: 350px;
+        /* border: 2px solid red; */
+    }
+
+    .header .content .main-heading{
+        display: block;
+        margin-top: 15rem;
+    }
+    .header .content .btn{
+        margin-top: 3.5rem;
+        padding: 0.5rem;
+    }
+    .showcase .imgbox{
+        float: none;
+        display: block;
+        width: 100%;
+        height: 40%;
+    }
+    .showcase .textbox{
+        float: none;
+        display: block;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        font-size: 0.2rem;
+       
+    }
+    .showcase .row{
+        height: 500px;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+    .features{
+        padding: 3rem;
+    }
+    .stats .stats1,
+    .stats .stats2,
+    .stats .stats3,
+    .stats .stats4{
+        float: none;
+        width: 100%;
+    }
+    .cta-banner .cta-banner-left,
+    .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 3rem;
+    }
+    .cta-banner .cta-banner-right{
+        /* margin-top: 0.2rem; */
+        padding: 1rem;
+        margin-right: 2rem;
+        /* border: none; */
+        background: rgba(64, 224, 171, 0.774);
+    }
+    .btn-cta span{
+        /* border: none; */
+        background: rgba(13, 201, 91, 0);
+        border-bottom: 3px solid white;   
+    }
+    .btn-cta{
+        border: none;
+    }
+
+    .about-wrapper .left{
+        /* background-color: rgba(250, 228, 210, 0.945); */
+        /* padding-right: 0px; */
+        /* width: 48%; */
+        margin-bottom: 0.2rem;
+        /* box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.473); */
+        background: #f26a36;
+        color: white;
+        font-family: 16px/26px 'Quicksand', sans-serif;
+        font-weight: 400;
+        width: 45%;
+        padding: none;
+        box-shadow: 0px 0px 10px 0px rgb(14, 31, 19);
+        height: 200px;
+    }
+    .about-wrapper .right{
+        /* background-color: rgba(40, 216, 69, 0.295); */
+        padding-right: 0px;
+        /* width: 48%; */
+        /* box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.473); */
+        background: #f26a36;
+        color: white;
+        font-family: 16px/26px 'Quicksand', sans-serif;
+        font-weight: 400;
+        width: 45%;
+        padding: 2rem;
+        box-shadow: 0px 0px 10px 0px rgb(14, 31, 19);
+        height: 200px;
+    }
+
+    .about-wrapper ul{
+        padding-left: 0rem;
+        /* border: 2px solid red; */       
+    }
+    
+
+
+    .about-wrapper{
+       
+        /* text-align: left; */
+        margin-top: 4rem;
+    }
+    .form-wrapper .company-address{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .form-wrapper .form{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .box-wrapper .form h1{
+        /* border: 3px solid #e63946; */
+        background: lightgray;
+        text-align: center;
+        /* border-bottom: none; */
+        margin: 10px;
+        border-bottom: none;
+    }
+
+}
+
+/* @media(min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+} */
+
+
+
+
+@media(orientation: landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+    }
+    .header .content .main-heading{
+        display: block;
+        margin-top: 0rem;
+    }
+    .header .content .btn{
+        margin-top: 3.5rem;
+        padding: 0.5rem;
+    }
+    .showcase .imgbox{
+        float: none;
+        display: block;
+        width: 100%;
+        height: 40%;
+    }
+    .showcase .textbox{
+        float: none;
+        display: block;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        font-size: 0.2rem;
+       
+    }
+    .showcase .row{
+        height: 500px;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+    .features{
+        padding: 3rem;
+    }
+    .stats .stats1,
+    .stats .stats2,
+    .stats .stats3,
+    .stats .stats4{
+        float: none;
+        width: 100%;
+    }
+    .cta-banner .cta-banner-left,
+    .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 3rem;
+    }
+    .cta-banner .cta-banner-right{
+        margin-top: 0.2rem;
+        padding: 1rem;
+       
+     
+    }
+    .about-wrapper .left{
+        background-color: rgba(250, 228, 210, 0.945);
+        padding-right: 0px;
+        width: 48%;
+        margin-bottom: 0.2rem;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.473);
+    }
+    .about-wrapper .right{
+        background-color: rgba(40, 216, 69, 0.295);
+        padding-right: 0px;
+        width: 48%;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.473);
+    }
+    .about-wrapper{
+       
+        text-align: left;
+        margin-top: 4rem;
+    }
+    .btn-secondary{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .form-wrapper .company-address{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .form-wrapper .form{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .box-wrapper .form h1{
+        /* border: 3px solid #e63946; */
+        background: lightgray;
+        text-align: center;
+        /* border-bottom: none; */
+        margin: 10px;
+        border-bottom: none;
+    }
+    .company-address .image{
+        height: 40%;
+        width: 100vmax;
+    }
+}
+  
